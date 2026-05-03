@@ -1,0 +1,3 @@
+Il grafico evidenza come, per vettori con dimensione N < 20, il Quicksort risulti meno efficiente degli algoritmi quadratici (nonostante ci siano anomalie tra N=40 e N=50, riconducibili a rumore nei dati), l'andamento conferma il vantaggio di un approccio "ibrido". Ho quindi implementato una versione migliorata del Quicksort che adotta l'Insertionsort per vettori con meno di 20 elementi.
+I dati mostrano che le prestazioni della funzione di libreria std::sort convergono quasi ovunque con quelle del mio Quicksort migliorato. 
+Infine, è interessante notare il comportamento del Mergesort, che risulta stranamente più lento del Bubblesort, nonostante sia a complessità logaritmica, fino a N=56 superandolo in efficienza solo oltre il punto fissato a N=64.
